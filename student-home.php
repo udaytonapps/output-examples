@@ -10,11 +10,16 @@ $title = $LAUNCH->link->settingsGet("title", $LAUNCH->link->title);
 include("menu.php");
 
 $OUTPUT->header();
+
 $OUTPUT->bodyStart();
+
+$OUTPUT->topNav();
 
 $OUTPUT->toolNav($menu);
 
-echo '<div class="container">';
+$OUTPUT->flashMessages();
+
+echo '<div class="container-fluid">';
 
 $OUTPUT->pageTitle($title, true, false);
 

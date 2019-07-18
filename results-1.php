@@ -8,11 +8,16 @@ $LAUNCH = LTIX::requireData();
 include("menu.php");
 
 $OUTPUT->header();
+
 $OUTPUT->bodyStart();
+
+$OUTPUT->topNav();
 
 $OUTPUT->toolNav($menu);
 
-echo '<div class="container">';
+$OUTPUT->flashMessages();
+
+echo '<div class="container-fluid">';
 
 $OUTPUT->pageTitle("Results <small>Example 1</small>");
 
