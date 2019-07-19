@@ -11,13 +11,11 @@ $OUTPUT->header();
 
 $OUTPUT->bodyStart();
 
-$OUTPUT->topNav();
-
-$OUTPUT->toolNav($menu);
-
-$OUTPUT->flashMessages();
+$OUTPUT->topNav($menu);
 
 echo '<div class="container-fluid">';
+
+$OUTPUT->flashMessages();
 
 $OUTPUT->pageTitle("Grade", false, false);
 
